@@ -22,5 +22,8 @@ puts "Creating reviews..."
 # * and a review belongs to an user.                              *
 # *****************************************************************
 # Create Reviews Here
-
+review1 = Review.create(star_rating: 5, comment: "This is a great product", user_id: user1.id, product_id: product1.id)
+review2 = Review.create(star_rating: 10, comment: "I like it", user_id: user2.id, product_id: product2.id)
+review3 = Review.create(star_rating: 6, comment: "This is a nice product", user_id: user1.id, product_id: product3.id)
+review4 = Review.create(star_rating: 5, comment: "Awesome", user_id: user3.id, product_id: product2.id)
 puts "Seeding done!"
